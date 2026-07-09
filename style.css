@@ -10,7 +10,7 @@ html{
 
 body{
     font-family:"Playfair Display",serif;
-    background:#3e2418;
+    background:#3e2415;
     color:#ffe082;
     line-height:1.7;
 }
@@ -22,7 +22,7 @@ h1,h2,h3,h4{
 
 section:not(#Home,#bukutamu){
     padding:80px 0;
-    border-bottom:1px solid #3e2418;
+    border-bottom:1px solid #3e2415;
 }
 
 section h2{
@@ -39,7 +39,7 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:18px 8%;
-    background: rgba(62, 36, 24, 0.9);
+    background: rgba(62, 36, 21, 0.95);
     backdrop-filter:blur(8px);
 }
 
@@ -61,7 +61,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:#ffe082;
+    color:#ffca28;
 }
 
 main{
@@ -72,7 +72,7 @@ main{
 
 #Home{
     text-align:center;
-    background:linear-gradient(to bottom,#3e2418,#8d5524);
+    background:linear-gradient(to bottom,#3e2415,#7a4a1f);
     color:#ffe082;
     padding:120px 20px;
     border-radius:18px;
@@ -92,7 +92,7 @@ main{
     display:inline-block;
     padding:14px 30px;
     text-decoration:none;
-    color:#2e1a0f;
+    color:#3e2415;
     background:#ffe082;
     border-radius:50px;
     font-weight:bold;
@@ -102,11 +102,12 @@ main{
 .btn:hover{
     transform:translateY(-3px);
     background:#4a2c17;
+    color:#ffe082;
 }
 
 #About{
     background: #ffe082;
-    color: #3e2418;
+    color: #3e2415;
     padding: 90px 80px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -115,7 +116,7 @@ main{
 }
 
 #About h2{
-    color: #3e2418;
+    color: #3e2415;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -125,7 +126,7 @@ main{
     margin: 0 auto 18px;
     text-align: justify;
     text-indent: 2em;
-    color: #3e2418;
+    color: #3e2415;
     line-height: 1.8;
 }
 
@@ -148,8 +149,8 @@ main{
     height:220px;
     object-fit:cover;
     border-radius:50%;
-    border:5px solid #3e2418;
-    box-shadow:0 10px 25px rgba(62, 36, 24, 0.9);
+    border:5px solid #3e2415;
+    box-shadow:0 10px 25px rgba(62, 36, 21, 0.95);
 }
 
 .profile-container h3{
@@ -172,7 +173,7 @@ main{
 }
 
 #Galery h2{
-    color: #3e2418;
+    color: #3e2415;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -192,10 +193,10 @@ main{
 }
 
 #Galery figure{
-    background: #3e2418;
+    background: #3e2415;
     padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(235, 194, 73, 0.3);
+    box-shadow: 0 4px 10px rgba(122, 74, 31, 0.3);
     text-align: center;
 }
 
@@ -204,6 +205,13 @@ main{
     height: 140px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+#Galery img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 }
 
 #Galery figcaption{
@@ -231,10 +239,16 @@ figcaption{
 
 #Video figure{
     color:#ffe082;
-    background:#3e2418;
+    background:#3e2415;
     padding:15px;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(243, 223, 134, 0.95);
+    box-shadow:0 5px 15px rgba(255, 202, 40, 0.5);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+#Video figure:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.45);
 }
 
 #Video video{
@@ -250,7 +264,7 @@ figcaption{
 }
 
 #bukutamu h2{
-    color:#3e2418;
+    color:#3e2415;
 }
 
 .guestbook{
@@ -259,7 +273,7 @@ figcaption{
     background:#ffe082;
     padding:30px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(62, 36, 24, 0.9);
+    box-shadow:0 8px 20px rgba(62, 36, 21, 0.95);
 }
 
 .form-group{
@@ -270,21 +284,21 @@ figcaption{
     display:block;
     margin-bottom:8px;
     font-weight:bold;
-    color:#3e2418;
+    color:#3e2415;
 }
 
 .form-group input,
 .form-group textarea{
     width:100%;
     padding:14px;
-    border:1px solid #8d5524;
+    border:1px solid #7a4a1f;
     border-radius:10px;
 }
 
 .form-group input:focus,
 .form-group textarea:focus{
     outline:none;
-    border-color:#2e1a0f;
+    border-color:#4a2c17;
 }
 
 button{
@@ -300,7 +314,7 @@ button{
 }
 
 button:hover{
-    background:#4a2c17;
+    background:#6f4a1f;
 }
 
 footer{
@@ -363,4 +377,53 @@ text-align:center;
 header h1{
 font-size:1.4rem;
 }
+}
+/* ===== Lightbox CSS-only (klik foto untuk memperbesar) ===== */
+.lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: background .35s ease, opacity .35s ease, visibility .35s;
+}
+
+.lightbox:target{
+    background: rgba(0,0,0,0.85);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox img{
+    max-width: 85vw;
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    transform: scale(0.7);
+    transition: transform .35s cubic-bezier(.34,1.56,.64,1);
+}
+
+.lightbox:target img{
+    transform: scale(1);
+}
+
+.lightbox-close{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #ffe082;
+    font-size: 2.2rem;
+    text-decoration: none;
+    line-height: 1;
+    transition: transform .25s ease;
+}
+
+.lightbox-close:hover{
+    transform: rotate(90deg);
 }
