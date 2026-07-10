@@ -180,12 +180,12 @@ main{
 
 #Galery ul{
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
     justify-content: center;
-    gap: 15px;
-    padding:0;  
-    flex-wrap: nowrap;
-    margin: 0 60px;  
+    gap: 25px;
+    padding:0;
+    margin: 0 auto;
 }
 
 #Galery li{
@@ -198,21 +198,31 @@ main{
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(122, 74, 31, 0.3);
     text-align: center;
-    width: 160px;
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
+    height: 210px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 #Galery img{
-    width: 140px;
-    height: 140px;
+    width: 140px !important;
+    height: 140px !important;
+    min-width: 140px !important;
+    min-height: 140px !important;
+    max-width: 140px !important;
+    max-height: 140px !important;
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: transform .35s ease, box-shadow .35s ease;
+    aspect-ratio: 1 / 1;
+    display: block;
 }
 
 #Galery img:hover{
@@ -224,11 +234,12 @@ main{
     margin-top: 8px;
     color: #ffe082;
     font-size: 13px;
-    width: 140px;
-    min-height: 34px;
+    width: 140px !important;
+    height: 40px !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 figcaption{
